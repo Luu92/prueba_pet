@@ -4,13 +4,13 @@ public class PetResponse {
 
     private String transactionId;
     private String dateCreated;
-    private String status;
+    private boolean status;
     private String name;
 
     public PetResponse() {
     }
 
-    public PetResponse(String transactionId, String dateCreated, String status, String name) {
+    public PetResponse(String transactionId, String dateCreated, boolean status, String name) {
         this.transactionId = transactionId;
         this.dateCreated = dateCreated;
         this.status = status;
@@ -41,11 +41,11 @@ public class PetResponse {
         this.name = name;
     }
 
-    public String getStatus() {
+    public boolean getStatus() {
         return status;
     }
 
-    public void setStatus(String status) {
+    public void setStatus(boolean status) {
         this.status = status;
     }
 }

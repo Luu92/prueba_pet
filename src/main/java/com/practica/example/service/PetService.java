@@ -39,7 +39,7 @@ public class PetService {
             return new PetResponse(
                     UUID.randomUUID().toString(),
                     LocalDateTime.now().toString(),
-                    petCreated.getStatus(),
+                    true,
                     petCreated.getName()
             );
 
