@@ -7,6 +7,15 @@ public class Pet {
     private Long id;
     private String name;
     private String status;
+    private String[] cadena;
+
+    public String[] getCadena() {
+        return cadena;
+    }
+
+    public void setCadena(String[] cadena) {
+        this.cadena = cadena;
+    }
 
     public Pet(){
 

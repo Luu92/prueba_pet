@@ -21,4 +21,12 @@ public class PetStoreClient {
         RestTemplate restTemplate = new RestTemplate();
         return restTemplate.postForObject(uri, pet, Pet.class);
     }
+
+    public void deletePet(Long petId){
+        String uri = "https://petstore.swagger.io/v2/pet/{petId}";
+        RestTemplate restTemplate = new RestTemplate();
+        restTemplate.delete(uri, petId );
+    }
+
+
 }
